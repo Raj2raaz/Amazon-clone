@@ -30,6 +30,7 @@ function Login() {
             .catch(error => alert(error.message))
 
         // do some fancy firebase register ....
+        // Changes
     }
 
 

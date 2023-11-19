@@ -1,12 +1,12 @@
 import React , {useState} from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { auth, createUserWithEmailAndPassword } from "./firebase.js";
 
 function Login() {
 
-    const history = useNavigate();
+    const navigate = useNavigate();
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
 
@@ -19,12 +19,12 @@ function Login() {
     const register = e =>{
         e.preventDefault();
         createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
+            .then((auth) => {
                 // It successfully created a new user with email and password
-                const user = userCredential.user;
-                console.log(user);
-                if(user){
-                    history.push('/')
+                // const user = userCredential.user;
+                console.log(auth);
+                if(auth){
+                    navigate('/')
                 }
             })
             .catch(error => alert(error.message))

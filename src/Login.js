@@ -2,7 +2,9 @@ import React , {useState} from "react";
 import "./Login.css";
 import { Link , useNavigate} from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
-import { auth, createUserWithEmailAndPassword } from "./firebase.js";
+import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "./firebase.js";
+// rest of your Firebase configurations...
+
 
 function Login() {
 
@@ -14,6 +16,12 @@ function Login() {
         e.preventDefault();
 
         // some fancy firebase login .....
+        auth
+        .signInWithEmailAndPassword(auth, email, password)
+        .then((auth) => {
+          navigate('/');
+        })
+        .catch(error => alert(error.message));
     }
 
     const register = e =>{

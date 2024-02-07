@@ -1,46 +1,46 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import "./Login.css";
-import { Link , useNavigate} from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
-import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "./firebase.js";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  auth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "./firebase.js";
 // rest of your Firebase configurations...
 
-
 function Login() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    const navigate = useNavigate();
-    const[email, setEmail] = useState('');
-    const[password, setPassword] = useState('');
+  const signIn = (e) => {
+    e.preventDefault();
 
-    const signIn = e => {
-        e.preventDefault();
+    // some fancy firebase login .....
+    // auth
+    // .signInWithEmailAndPassword(auth, email, password)
+    // .then((auth) => {
+    //   navigate('/');
+    // })
+    // .catch(error => alert(error.message));
+  };
 
-        // some fancy firebase login .....
-        auth
-        .signInWithEmailAndPassword(auth, email, password)
-        .then((auth) => {
-          navigate('/');
-        })
-        .catch(error => alert(error.message));
-    }
+  const register = (e) => {
+    e.preventDefault();
 
-    const register = e =>{
-        e.preventDefault();
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((auth) => {
-                // It successfully created a new user with email and password
-                // const user = userCredential.user;
-                console.log(auth);
-                if(auth){
-                    navigate('/')
-                }
-            })
-            .catch(error => alert(error.message))
+    createUserWithEmailAndPassword(auth, email, password)
+    .then((auth) => {
 
-        // do some fancy firebase register ....
-        // Changes
-    }
-
+      //  It Successfully created a new user with email & Password 
+      
+      console.log(auth);
+      if(auth){
+        alert('You have successfully Signed up!');
+        navigate("/");
+      }
+    })
+    .catch((error) => alert(error.message));
+  };
 
   return (
     <div className="login">
@@ -51,18 +51,27 @@ function Login() {
         />
       </Link>
 
-
       <div className="login_container">
         <h1>Sign In</h1>
 
         <form action="">
           <h5>E-mail</h5>
-          <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
           <h5>Password</h5>
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)}/>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-          <button type='submit' className="login_signInButton" onClick={signIn}>Sign In</button>
+          <button type="submit" className="login_signInButton" onClick={signIn}>
+            Sign In
+          </button>
         </form>
 
         <p>
@@ -74,7 +83,6 @@ function Login() {
         <button className="login_registerButton" onClick={register}>
           Create your Amazon Account
         </button>
-
       </div>
     </div>
   );

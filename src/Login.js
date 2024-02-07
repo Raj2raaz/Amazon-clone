@@ -6,7 +6,8 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "./firebase.js";
-// rest of your Firebase configurations...
+//  predefined function provided by Firebase Authentication, createUserWithEmailAndPassword, signInWithEmailAndPassword
+// My Firebase configurations...
 
 function Login() {
   const navigate = useNavigate();
@@ -16,13 +17,12 @@ function Login() {
   const signIn = (e) => {
     e.preventDefault();
 
-    // some fancy firebase login .....
-    // auth
-    // .signInWithEmailAndPassword(auth, email, password)
-    // .then((auth) => {
-    //   navigate('/');
-    // })
-    // .catch(error => alert(error.message));
+    signInWithEmailAndPassword(auth, email, password)
+    .then((auth) => {
+      navigate("/");
+    })
+    .catch((error) => alert(error.message));
+
   };
 
   const register = (e) => {
@@ -32,7 +32,7 @@ function Login() {
     .then((auth) => {
 
       //  It Successfully created a new user with email & Password 
-      
+
       console.log(auth);
       if(auth){
         alert('You have successfully Signed up!');

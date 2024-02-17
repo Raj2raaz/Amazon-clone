@@ -1,5 +1,6 @@
 
 # Amazon-clone
+This project is a full-stack e-commerce platform developed with the React, Node.js, Express.js and Firebase for user authentication. It faithfully replicates Amazon's features, including product browsing, cart management, and a secure checkout experience. Notably, the integration of Stripe ensures seamless and reliable payment processing. This project serves as a comprehensive showcase of modern web development technologies, offering a practical and functional Amazon-like shopping experience.
 
 # Tech We Used
 - ReactJs

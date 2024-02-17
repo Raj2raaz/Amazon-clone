@@ -32,7 +32,7 @@ This project is a full-stack e-commerce platform developed with the React, Node.
 ![UserSuccess Page](./screenshot/usersignedin.png)
 
 - ITEM ADDED
-![Item Page](./screenshot/"item added.png")
+![Item Page](./screenshot/itemadded.png)
 
 - CHECKOUT PAGE
 ![Checkout Page](./screenshot/checkout.png)

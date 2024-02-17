@@ -49,3 +49,10 @@ SIGNUP PAGE
 
 SIGNUP SUCCESS PAGE
 ![SIGNUp Page](./screenshot/signupsuccess.png)
+
+USER SIGNED IN SUCCESSFULLY
+![UserSuccess Page](./screenshot/usersignedin.png)
+
+CHECKOUT PAGE
+![Checkout Page](./screenshot/checkout.png)
+

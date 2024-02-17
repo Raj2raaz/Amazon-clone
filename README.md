@@ -41,13 +41,13 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 # Amazon-clone
 
-HOME PAGE
+- HOME PAGE
 ![Home Page](./screenshot/home.png)
 
-SIGNUP PAGE
+- SIGNUP PAGE
 ![SIGNUp Page](./screenshot/signup.png)
 
-SIGNUP SUCCESS PAGE
+- SIGNUP SUCCESS PAGE
 ![SIGNUp Page](./screenshot/signupsuccess.png)
 
 USER SIGNED IN SUCCESSFULLY

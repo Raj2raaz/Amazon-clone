@@ -42,6 +42,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 # Amazon-clone
 
 HOME PAGE
-![Home Page](/screenshot/home.png)
+![Home Page](./screenshot/home.png)
 
 SIGNUP PAGE

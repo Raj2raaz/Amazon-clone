@@ -43,3 +43,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 HOME PAGE
 ![Home Page](/images/home.png)
+
+SIGNUP PAGE

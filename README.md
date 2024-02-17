@@ -10,16 +10,16 @@
 - SIGNUP SUCCESS PAGE
 ![SIGNUp Page](./screenshot/signupsuccess.png)
 
-USER SIGNED IN SUCCESSFULLY
+- USER SIGNED IN SUCCESSFULLY
 ![UserSuccess Page](./screenshot/usersignedin.png)
 
-ITEM ADDED
+- ITEM ADDED
 ![Item Page](./screenshot/item added.png)
 
-CHECKOUT PAGE
+- CHECKOUT PAGE
 ![Checkout Page](./screenshot/checkout.png)
 
-PAYMENT PAGE
+- PAYMENT PAGE
 ![Payment Page](./screenshot/payment.png)
 
 ![Payment Page](./screenshot/paymentcard.png)

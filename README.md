@@ -1,6 +1,23 @@
 
 # Amazon-clone
 
+# Tech We Used
+- ReactJs
+- Firebase Hosting
+- Firebase Auth
+- Firebase Storage
+- React-Dom
+- React Redux
+- Stripe payment
+
+# Features
+- Login and Logout
+- Add to cart
+- Remove from cart
+- Payment
+- Neat and clean UI
+
+# SCREENSHOTS
 - HOME PAGE
 ![Home Page](./screenshot/home.png)
 

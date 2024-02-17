@@ -19,25 +19,25 @@ This project is a full-stack e-commerce platform developed with the React, Node.
 - Neat and clean UI
 
 # SCREENSHOTS
-- HOME PAGE
+- Home Page
 ![Home Page](./screenshot/home.png)
 
-- SIGNUP PAGE
+- SignUp Page
 ![SIGNUp Page](./screenshot/signup.png)
 
-- SIGNUP SUCCESS PAGE
+- SignUp Success Page
 ![SIGNUp Page](./screenshot/signupsuccess.png)
 
-- USER SIGNED IN SUCCESSFULLY
+- User Signed In Successfully
 ![UserSuccess Page](./screenshot/usersignedin.png)
 
-- ITEM ADDED
+- Item Added
 ![Item Page](./screenshot/itemadded.png)
 
-- CHECKOUT PAGE
+- Checkout Page
 ![Checkout Page](./screenshot/checkout.png)
 
-- PAYMENT PAGE
+- Payment Page
 ![Payment Page](./screenshot/payment.png)
 
 ![Payment Page](./screenshot/paymentcard.png)

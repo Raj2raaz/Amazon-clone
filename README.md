@@ -45,3 +45,7 @@ HOME PAGE
 ![Home Page](./screenshot/home.png)
 
 SIGNUP PAGE
+![SIGNUp Page](./screenshot/signup.png)
+
+SIGNUP SUCCESS PAGE
+![SIGNUp Page](./screenshot/signupsuccess.png)
